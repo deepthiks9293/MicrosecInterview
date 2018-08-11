@@ -8,6 +8,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
+    title: 'New-Tab',
+    icon: 'nb-e-commerce',
+    link: '/pages/new-tab',
+    home: true,
+  },
+  {
     title: 'IoT Dashboard',
     icon: 'nb-home',
     link: '/pages/iot-dashboard',
