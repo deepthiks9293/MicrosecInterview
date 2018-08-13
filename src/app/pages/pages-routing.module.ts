@@ -5,7 +5,6 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
-import { AppComponent } from './new-tab/new-tab.component';
 
 const routes: Routes = [{
   path: '',
@@ -16,9 +15,9 @@ const routes: Routes = [{
   }, {
     path: 'iot-dashboard',
     component: DashboardComponent,
-  },{
+  }, {
     path: 'new-tab',
-    component: AppComponent,
+    loadChildren: './new-tab/new-tab.module#AppModule',
   }, {
     path: 'ui-features',
     loadChildren: './ui-features/ui-features.module#UiFeaturesModule',

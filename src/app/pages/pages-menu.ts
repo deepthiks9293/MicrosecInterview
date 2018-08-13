@@ -6,12 +6,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-e-commerce',
     link: '/pages/dashboard',
     home: true,
-  },
+  }, 
   {
     title: 'New-Tab',
-    icon: 'nb-e-commerce',
-    link: '/pages/new-tab',
-    home: true,
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Smart Table',
+        link: '/pages/new-tab/grid',
+      },
+    ],
   },
   {
     title: 'IoT Dashboard',

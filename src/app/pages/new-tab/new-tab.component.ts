@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './new-tab.component.html',
-  styleUrls: ['./new-tab.component.css']
+  selector: 'ngx-tables',
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
-  title = 'My Angular Application';
 }
